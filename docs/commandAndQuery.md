@@ -168,5 +168,3 @@ string playerName = this.SendQuery(new GetPlayerNameQuery());
   **查询执行流程**
 
 ![loading-ag-1200](images/query-flow.jpg)
-
-
