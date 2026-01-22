@@ -1,4 +1,5 @@
 - [概述](introduction.md)
+- [API](api.md)
 - **核心架构**
   - [架构组件](architecture.md)
   - [命令与查询](commandAndQuery.md)
