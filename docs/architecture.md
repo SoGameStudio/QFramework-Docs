@@ -4,7 +4,7 @@
 
 本文件详细介绍了 QFramework 中的四大主要架构层： Controllers, Systems, Models, and Utilities，以及它们的责任、交互规则和由 Command 模式协调的它们之间状态变化的模式。有关具体命令和查询实现的更多信息，请参见[命令与查询]。有关事件驱动通信的详细信息，请参见[事件系统]。
 
-## Overview
+## 简介
 
 QFramework 实现了一种分层的类似 MVC 的架构，并且各层之间有严格的通信规则。该架构由四个主要层组成，并且通过依赖注入和事件系统协调，还使用了命令模式进行状态管理。
 
@@ -54,8 +54,6 @@ Responsibilities:
 - ❌ 直接修改状态（使用命令）
 
 ### IModel - 数据层
-
-The `IModel` interface represents the data layer, responsible for data definition and providing CRUD operations. Models maintain application state and business data.
 
 `IModel`接口代表数据层，负责数据定义并提供 CRUD 操作。模型维护程序状态和业务数据。
 
