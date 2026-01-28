@@ -15,6 +15,10 @@
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md' // 修复一些嵌套路径下找不着侧边栏的问题
       },
+      // 插件配置（可选）
+     sidebarFree: {
+      // 可以在这里自定义排除哪些文件夹
+     }
       search: {
         maxAge: 86400000,
         paths: 'auto',
@@ -26,5 +30,6 @@
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-free@latest/dist/index.js"></script>
 </body>
 </html>
