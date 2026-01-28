@@ -3,19 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>QFramwork文档</title>
+  <link rel="icon" href="/_media/LOGO.png">
+  
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/style.min.css" />
+
+  <style>
+    /* 1. 控制侧边栏 Logo 的大小和样式 */
+    .sidebar .app-name-link img {
+      width: 120px;   /* 你可以根据需要调整这个数值 */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* 2. 让 Logo 和文字整体居中并保持间距 */
+    .sidebar .app-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 20px 0; /* 上下外边距 */
+    }
+
+    /* 3. (可选) 如果不想显示文字只显示 Logo，取消下面注释 */
+    /* .sidebar .app-name-link span { display: none; } */
+  </style>
 </head>
 <body>
   <div id="app">加载中...</div>
+  
   <script>
     window.$docsify = {
-      name: '脚本 API 文档',
-      loadSidebar: true, // 必须开启
-      subMaxLevel: 2,    // 建议设为 3，这样能看到文档内的三级标题
+      name: 'QFramwork文档',
+      logo: '/_media/LOGO.png',
+      loadSidebar: true, 
+      sidebarDisplayLevel: 1, 
+      subMaxLevel: 2,    
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md' // 修复一些嵌套路径下找不着侧边栏的问题
+        '/.*/_sidebar.md': '/_sidebar.md' 
       },
-       search: {
+      search: {
         maxAge: 86400000,
         paths: 'auto',
         placeholder: '搜索',
@@ -24,8 +53,9 @@
       }
     }
   </script>
+
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
